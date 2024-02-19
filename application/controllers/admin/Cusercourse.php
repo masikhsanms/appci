@@ -9,6 +9,10 @@ class Cusercourse extends CI_Controller
         parent::__construct();
         $this->load->model("musercourse");
         $this->load->library('form_validation');
+        $this->load->model('mauth');
+		if(!$this->mauth->current_user()){
+			redirect('cauth/login');
+		}
 
     }
 

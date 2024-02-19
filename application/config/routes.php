@@ -50,7 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 // $this->set_directory( "admin" );
-$route['default_controller'] = 'admin/coverview';
+// $route['default_controller'] = 'admin/coverview';
+$route['default_controller'] = 'cauth';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['admin'] = 'admin/coverview';
